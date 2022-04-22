@@ -8,8 +8,11 @@ function findMultiples(integer, limit) {
     temp = temp + integer;
     arr.push(temp);
   }
+  if (temp > limit) {
+    arr.pop(temp);
+  }
 
   return arr;
 }
 
-console.log(findMultiples(2, 6));
+console.log(findMultiples(5, 7));
