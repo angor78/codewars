@@ -23,3 +23,10 @@ function disemvowel(str) {
 
 console.log(disemvowel("This website is for losers LOL!"));
 //A, E, I, O, U
+// function disemvowel(str) {
+//     var vowels = ['a', 'e', 'i', 'o', 'u'];
+    
+//     return str.split('').filter(function(el) {
+//       return vowels.indexOf(el.toLowerCase()) == -1;
+//     }).join('');
+//   }
