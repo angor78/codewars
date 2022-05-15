@@ -1,4 +1,4 @@
-function past(h, m, s){
-  let totalSeconds = (h*3600)+(m*60)+s
-  return totalSeconds*1000
-}
+function sumTwoSmallestNumbers(numbers){  
+  numbers = numbers.sort(function(a, b){return a - b; });
+  return numbers[0] + numbers[1];
+};
