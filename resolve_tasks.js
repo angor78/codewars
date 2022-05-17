@@ -1,4 +1,7 @@
-function check(a, x) {
-  // your code here
-  return a.find(el=>el===x)?true:false
+function find_average(array) {
+  if(array.length===0){
+    return 0
+  }else{
+    return array.reduce((acc, num) => acc + num, 0)/array.length
+  }
 }
