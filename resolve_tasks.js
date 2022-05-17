@@ -1,6 +1,4 @@
-function reverseWords(str){
-  
-  let array = str.split(' ')
-  str = array.reverse().join(' ')
-  return str; // reverse those words
+function check(a, x) {
+  // your code here
+  return a.find(el=>el===x)?true:false
 }
