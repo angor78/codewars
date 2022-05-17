@@ -1,6 +1,6 @@
-function XO(str) {
-  let array = str.split('')
-  let countO =array.filter(el=>el==='o'||el==='O')
-  let countX =array.filter(el=>el==='x'||el==='X')
-  return countX.length === countO.length 
-  }
+function reverseWords(str){
+  
+  let array = str.split(' ')
+  str = array.reverse().join(' ')
+  return str; // reverse those words
+}
