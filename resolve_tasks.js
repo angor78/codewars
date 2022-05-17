@@ -1,7 +1,5 @@
-function find_average(array) {
-  if(array.length===0){
-    return 0
-  }else{
-    return array.reduce((acc, num) => acc + num, 0)/array.length
-  }
-}
+String.prototype.toJadenCase = function () {
+  let arr = this.split(' ')
+  let str = arr.map((w) =>w[0].toUpperCase()+w.slice(1)).join(' ')
+   return str; 
+};
