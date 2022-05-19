@@ -1,6 +1,7 @@
-function fakeBin(x) {
-  let array = x.split("");
-  let fakeBinary = array.map((el) => (el >= 5 ? "1" : "0")).join("");
-
-  return fakeBinary;
-}
+const reverseSeq = n => {
+  let array = []
+  for(let i = 1; i<=n;i++){
+    array.unshift(i)
+  }
+  return array;
+};
