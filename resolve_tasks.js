@@ -1,7 +1,3 @@
-function greet(name) {
-  if (name === "Johnny") {
-    return "Hello, my love!";
-  } else {
-    return "Hello, " + name + "!";
-  }
+function friend(friends) {
+  return friends.filter((f) => f.length < 5 && f.length > 3);
 }
