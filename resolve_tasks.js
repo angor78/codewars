@@ -1,3 +1,7 @@
-function paperwork(n, m) {
-  return n<0||m<0?0:n*m
+function greet(name) {
+  if (name === "Johnny") {
+    return "Hello, my love!";
+  } else {
+    return "Hello, " + name + "!";
+  }
 }
