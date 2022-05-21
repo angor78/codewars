@@ -1,8 +1,11 @@
-function getAverage(marks){
-  //TODO : calculate the downward rounded average of the marks array
-  let av = 0
-  for(i=0;i<marks.length;i++){
-    av+=marks[i]
+function solution(number){
+  if(number<0){return 0}
+  let array=[]
+  for(i=0;i<number;i++){
+    if(i%3===0||i%5===0){
+      array.push(i)
+    }
   }
-  return Math.trunc(av/marks.length)
+  let sum = array.reduce((acc,a)=>acc+a,0)
+  return sum
 }
