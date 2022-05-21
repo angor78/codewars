@@ -1,3 +1,11 @@
-function friend(friends) {
-  return friends.filter((f) => f.length < 5 && f.length > 3);
+function bmi(weight, height) {
+  var bmi = weight / (height * height);
+
+  return bmi < 18.5
+    ? "Underweight"
+    : bmi <= 25
+    ? "Normal"
+    : bmi <= 30
+    ? "Overweight"
+    : "Obese";
 }
