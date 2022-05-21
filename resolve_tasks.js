@@ -1,11 +1,8 @@
-function bmi(weight, height) {
-  var bmi = weight / (height * height);
-
-  return bmi < 18.5
-    ? "Underweight"
-    : bmi <= 25
-    ? "Normal"
-    : bmi <= 30
-    ? "Overweight"
-    : "Obese";
+function getAverage(marks){
+  //TODO : calculate the downward rounded average of the marks array
+  let av = 0
+  for(i=0;i<marks.length;i++){
+    av+=marks[i]
+  }
+  return Math.trunc(av/marks.length)
 }
