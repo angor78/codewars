@@ -1,4 +1,11 @@
-function openOrSenior(data){
-  let user = data.map(u=>(u[0]>=55)&&(u[1]>7)?u='Senior':u='Open')
-  return user
+function bingo(a) {
+  // your winning code here
+  let bingoCode = [2, 9, 14, 7, 15];
+  function contains(a, bingoCode) {
+    for (var i = 0; i < bingoCode.length; i++) {
+      if (a.indexOf(bingoCode[i]) == -1) return "LOSE";
+    }
+    return "WIN";
+  }
+  return contains(a, bingoCode);
 }
