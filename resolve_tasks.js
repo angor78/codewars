@@ -1,8 +1,12 @@
-let longHand = /[A-Za-z0-9_]+/;
-let shortHand = /\w+/;
-let numbers = "42";
-let varNames = "important_var";
-longHand.test(numbers);
-shortHand.test(numbers);
-longHand.test(varNames);
-shortHand.test(varNames);
+function digital_root(n) {
+  if (n < 9) {
+    return Number(n);
+  }
+  let numToArrStr = String(n).split("");
+  let sumOfDigit = numToArrStr.reduce((acc, el) => Number(acc) + Number(el));
+  n = sumOfDigit;
+  if (n > 9) {
+    return digital_root(n);
+  }
+  return n;
+}
