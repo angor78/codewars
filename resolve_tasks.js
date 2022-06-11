@@ -262,8 +262,22 @@
 // console.log(isIncludes("Incubator", "Cut"));
 // console.log(isIncludes("Incubator", "table"));
 
-function findOutlier(integers){ 
-  return integers.filter(el=>el%2===0).length!==1
-    ?integers.find(el=>el%2!==0)
-    :integers.find(el=>el%2===0)
+// function findOutlier(integers){
+//   return integers.filter(el=>el%2===0).length!==1
+//     ?integers.find(el=>el%2!==0)
+//     :integers.find(el=>el%2===0)
+// }
+
+function sumArray(array) {
+  console.log(array);
+  if (array === undefined) {
+    return 0;
+  }
+  if (array === null || array === [] || array.length < 3) {
+    return 0;
+  } else {
+    let sortedArray = array.sort((a, b) => a - b);
+    let reducedArray = sortedArray.splice(1, sortedArray.length - 2);
+    return reducedArray.reduce((acc, el) => acc + el);
+  }
 }
